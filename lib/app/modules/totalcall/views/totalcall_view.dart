@@ -62,8 +62,10 @@ class TotalcallView extends GetView<TotalcallController> {TotalcallView({super.k
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
+          scrollDirection: Axis.vertical,
+
           child: DataTable(
+
             columns: [
               DataColumn(label: Text('ID')),
               DataColumn(label: Text('Call From')),
